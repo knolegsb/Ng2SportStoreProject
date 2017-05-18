@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var product_model_1 = require('./product.model');
-var observable_1 = require('rxjs/observable');
+var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/observable/from');
 var StaticDataSource = (function () {
     function StaticDataSource() {
@@ -33,7 +33,7 @@ var StaticDataSource = (function () {
         ];
     }
     StaticDataSource.prototype.getProducts = function () {
-        return observable_1.Observable.from([this.products]);
+        return Observable_1.Observable.from([this.products]);
     };
     StaticDataSource = __decorate([
         core_1.Injectable(), 

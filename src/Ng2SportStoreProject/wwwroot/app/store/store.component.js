@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var product_repository_1 = require('../model/product.repository');
+var core_1 = require("@angular/core");
+var product_repository_1 = require("../model/product.repository");
 var StoreComponent = (function () {
     function StoreComponent(repository) {
         this.repository = repository;
@@ -45,7 +45,8 @@ var StoreComponent = (function () {
     };
     Object.defineProperty(StoreComponent.prototype, "pageCount", {
         get: function () {
-            return Math.ceil(this.repository.getProducts(this.selectedCategory).length / this.productsPerPage);
+            return Math.ceil(this.repository
+                .getProducts(this.selectedCategory).length / this.productsPerPage);
         },
         enumerable: true,
         configurable: true
