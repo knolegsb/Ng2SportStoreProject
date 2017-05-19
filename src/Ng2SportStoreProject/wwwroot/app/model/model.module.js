@@ -19,6 +19,10 @@ var ModelModule = (function () {
     }
     ModelModule = __decorate([
         core_1.NgModule({
+            //imports: [HttpModule],
+            //providers: [ProductRepository, StaticDataSource, Cart, Order, OrderRepository,
+            //    { provide: StaticDataSource, useClass:RestDataSource },
+            //      RestDataSource, AuthService]
             providers: [product_repository_1.ProductRepository, static_datasource_1.StaticDataSource, cart_model_1.Cart, order_model_1.Order, order_repository_1.OrderRepository]
         }), 
         __metadata('design:paramtypes', [])
